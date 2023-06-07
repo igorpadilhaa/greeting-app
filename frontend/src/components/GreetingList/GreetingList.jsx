@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 
 import GreetingCard from '../GreetingCard';
 
+import { greetingList } from './GreetingList.module.css';
+
 function GreetingList({ greetings = [] }) {
     const listItems = [];
 
@@ -14,7 +16,7 @@ function GreetingList({ greetings = [] }) {
     }
 
     return (
-        <ul>
+        <ul className={greetingList}>
             {listItems}
         </ul>
     )
