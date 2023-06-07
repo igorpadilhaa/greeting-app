@@ -1,0 +1,16 @@
+.card {
+    margin-bottom: 10px;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    max-width: 20%;
+    padding: 5px 10px;
+
+    box-shadow: gray 1px 1px 4px 1px;
+}
+
+.card:hover {
+    border-color: cyan;
+    
+}
