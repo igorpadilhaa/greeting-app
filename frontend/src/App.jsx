@@ -1,13 +1,15 @@
 import { useState } from 'react'
-import GreetingList from './components/GreetingList'
 import { useEffect } from 'react'
+
+import GreetingList from './components/GreetingList'
+
+import { fetchGreetings } from './services/greetings' 
 
 function App() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:8080/api.php', { method: 'GET' })
-      .then(response => response.json())
+    fetchGreetings()
       .then(setData)
   }, [])
 
