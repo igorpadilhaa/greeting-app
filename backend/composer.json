@@ -12,6 +12,9 @@
             "email": "igor.padilha2004@gmail.com"
         }
     ],
+    "scripts": {
+        "start": "cd ./src; php -S localhost:8000"
+    },
     "require": {
         "vlucas/phpdotenv": "^5.5"
     }
