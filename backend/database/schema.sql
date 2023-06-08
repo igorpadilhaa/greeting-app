@@ -1,0 +1,4 @@
+CREATE TABLE greetings (
+  greeting_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  greeting_text VARCHAR(60) UNIQUE NOT NULL
+);
