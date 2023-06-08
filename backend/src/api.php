@@ -1,21 +1,10 @@
 <?php
+  require_once(__DIR__ . '/database.php');
+
   header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');
 
-  $greetings = [
-    [
-      'id' => 1,
-      'text' => 'Hello'       
-    ],
-    [
-      'id' => 2,
-      'text' => 'Howdy'       
-    ],
-    [
-      'id' => 3,
-      'text' => 'Hi'       
-    ]
-  ];
+  $greetings = list_greetings();
 
   echo json_encode($greetings);
 ?>
